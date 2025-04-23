@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeMainFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YouTube URL:"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/inputYoutubeURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="https://www.youtube.com/watch?v=video-id"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="20sp">
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:layout_margin="10sp"/>
+        <Button
+            android:id="@+id/addToPlayListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD TO PLAYLIST"
+            android:layout_margin="10sp"/>
+        <Button
+            android:id="@+id/myPlayListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MY PLAYLIST"
+            android:layout_margin="10sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Logout"/>
+    </FrameLayout>
+</LinearLayout>
